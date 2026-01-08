@@ -65,13 +65,12 @@ def executar_etl():
             if col in df.columns:
                 df[col] = df[col].apply(limpar_texto)
 
-        # 4. Tratamento das Notas (Questões)
         # Assume que colunas de notas começam com 'Q' (Ex: Q1_Infraestrutura, Q2_Didatica)
         cols_questoes = [c for c in df.columns if c.startswith('Q')]
         
         # Preenche vazios nas notas com 0 ou média (Decisão de Negócio)
         # Aqui optamos por deixar vazio (NaN) para não afetar a média, 
-        # mas garantimos que sejam numéricas.
+        # mas garantimos que sejam numéricas)
         for col in cols_questoes:
             df[col] = pd.to_numeric(df[col], errors='coerce')
 
