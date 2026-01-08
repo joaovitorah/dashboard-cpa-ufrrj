@@ -2,8 +2,6 @@
 
 ![Status](https://img.shields.io/badge/Status-Finalizando_Repositório-orange) ![Tipo](https://img.shields.io/badge/Arquivo-Demonstrativo-orange)
 
-> **🔗 [CLIQUE AQUI PARA ACESSAR O DASHBOARD INTERATIVO PUBLICADO](https://app.powerbi.com/view?r=eyJrIjoiMjI0MzVlNDEtZWJkZS00MjhkLTg1OWEtZTJhOTMyZjY5OTlhIiwidCI6IjcwZGM2ZWM0LTc0YjEtNGMyNy04MWY5LWQwMmVlMmU1NzM5NiJ9)**
-
 ## Sobre o Projeto
 
 Este projeto apresenta uma solução de **Business Intelligence (BI)** desenvolvida para auxiliar a **Comissão Própria de Avaliação (CPA)** da **Universidade Federal Rural do Rio de Janeiro (UFRRJ)**.
@@ -11,6 +9,15 @@ Este projeto apresenta uma solução de **Business Intelligence (BI)** desenvolv
 O objetivo foi transformar os dados brutos das avaliações institucionais em painéis interativos visuais, permitindo identificar gargalos e pontos fortes nos cursos e departamentos da universidade.
 
 ---
+
+Por motivos de **segurança da informação ez proteção de dados (LGPD)**, o arquivo fonte (`.pbix`) não está disponível neste repositório público, pois contém dados sensíveis da comunidade acadêmica da UFRRJ.
+
+No entanto, a versão pública e interativa (com dados anonimizados ou agregados) pode ser acessada através do link abaixo:
+
+### 🔗 [CLIQUE AQUI PARA ACESSAR O DASHBOARD ONLINE](https://app.powerbi.com/view?r=eyJrIjoiMjI0MzVlNDEtZWJkZS00MjhkLTg1OWEtZTJhOTMyZjY5OTlhIiwidCI6IjcwZGM2ZWM0LTc0YjEtNGMyNy04MWY5LWQwMmVlMmU1NzM5NiJ9)
+
+---
+*Este link leva para a versão publicada via Power BI Service.
 
 ## ⚙️ Engenharia de Dados e Automação (ETL)
 
