@@ -16,12 +16,12 @@ Abaixo estão demonstradas as principais telas e capacidades analíticas da ferr
 
 ### 1. Visão Geral (Overview)
 Painel principal que resume os índices gerais de satisfação da universidade.
-*(Insira aqui um print da tela principal)*
+**
 ![Tela Geral](caminho_para_sua_imagem_geral.png)
 
 ### 2. Filtros Dinâmicos
 Capacidade de segmentar os dados por **Campus (Seropédica, Nova Iguaçu, Três Rios)** e **Instituto**.
-*(Insira aqui um print ou GIF mostrando os filtros)*
+**
 ![Filtros](caminho_para_sua_imagem_filtros.png)
 
 ### 3. Análise Temporal
