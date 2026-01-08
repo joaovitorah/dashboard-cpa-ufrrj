@@ -67,7 +67,7 @@ Junto ao desenvolvimento técnico do dashboard, foi elaborada uma metodologia pa
 
 A construção do projeto utilizou a seguinte stack tecnológica:
 
-* **Python (Pandas):** Scripts de automação para extração e tratamento (ETL) dos dados brutos da COTIC.
+* **Python (Pandas):** O script etl_limpeza_cpa.py implementa técnicas de Hashed-based Anonymization (SHA-256) para assegurar que nenhum dado pessoal identificável (PII) seja carregado para o ambiente de visualização, em estrita conformidade com a LGPD.
 * **Power BI:** Renderização dos gráficos interativos e publicação do dashboard.
 * **UX Design:** Interface focada em usabilidade para gestores públicos.
 
