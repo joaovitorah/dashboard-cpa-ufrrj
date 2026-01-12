@@ -94,24 +94,9 @@ O projeto atual representa a primeira fase da modernização da análise de dado
     * O dashboard passará a refletir o cenário da avaliação institucional minutos após o processamento dos dados, sem intervenção humana manual.
 
 ### Fluxo de Evolução (Diagrama)
+<img width="8192" height="470" alt="Untitled diagram-2026-01-12-064641" src="https://github.com/user-attachments/assets/82e548ed-671b-4461-8957-395decd4eaec" />
 
-```mermaid
-graph TD
-    subgraph "Fase Atual (Manual/Híbrida)"
-    A1[Sistema Acadêmico] -->|Exportação Manual| B1(Arquivos Excel/CSV)
-    B1 -->|Execução Manual| C1[Script Python ETL]
-    C1 -->|Gera CSV Tratado| D1[Power BI Desktop]
-    end
 
-    subgraph "Fase Futura (Automatizada 100%)"
-    A2[Sistema Acadêmico] -->|API / Endpoints| B2(Coletor Automático)
-    B2 -->|Trigger Automático| C2[Python ETL no Servidor]
-    C2 -->|Grava em Banco DW| D2[(Data Warehouse CPA)]
-    D2 <-->|Gateway| E2[Power BI Online]
-    end
-
-    style A2 fill:#f9f,stroke:#333,stroke-width:2px
-    style E2 fill:#bbf,stroke:#333,stroke-width:2px
 
 ## Autoria e Colaboração
 
