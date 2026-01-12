@@ -36,14 +36,19 @@ Abaixo estão demonstradas as principais telas e capacidades analíticas da ferr
 ### 1. Visão Geral (Overview)
 Painel principal que resume os índices gerais de satisfação da universidade.
 ![Tela Geral](caminho_para_sua_imagem_geral.png)
+<img width="1014" height="593" alt="image" src="https://github.com/user-attachments/assets/34ed95a1-1ced-4365-a8cd-6887534bace8" />
+
 
 ### 2. Filtros Dinâmicos
 Capacidade de segmentar os dados por **Campus (Seropédica, Nova Iguaçu, Três Rios)** e **Instituto**.
 ![Filtros](caminho_para_sua_imagem_filtros.png)
+<img width="1041" height="610" alt="image" src="https://github.com/user-attachments/assets/2e9fc29f-2237-42db-9198-81ee50ef7441" />
+
 
 ### 3. Análise Temporal
 Gráfico de linha comparando a evolução das notas nos últimos 3 anos.
 ![Evolução Temporal](caminho_para_sua_imagem_temporal.png)
+<img width="1028" height="605" alt="image" src="https://github.com/user-attachments/assets/be0a3602-d620-44f2-9df1-db56d3471897" />
 
 ---
 
