@@ -75,6 +75,44 @@ A construção do projeto utilizou a seguinte stack tecnológica:
 
 ---
 
+## Roadmap e Trabalhos Futuros
+
+O projeto atual representa a primeira fase da modernização da análise de dados da CPA. O planejamento para as próximas etapas visa a **automação total do pipeline de dados**, eliminando a necessidade de extração manual de arquivos.
+
+### Metas de Evolução da Arquitetura:
+
+* ** Integração via API (Endpoints):**
+    * Substituição do recebimento de arquivos estáticos (.xlsx/.csv) pelo desenvolvimento de **Endpoints RESTful** seguros.
+    * Objetivo: Conectar o script de ETL diretamente ao banco de dados do Sistema Acadêmico (respeitando as camadas de segurança da COTIC), permitindo a extração dos dados brutos via requisição HTTP.
+
+* ** Orquestração de ETL (Data Pipeline):**
+    * Implementação de orquestradores (como *Apache Airflow* ou *Cron Jobs*) para executar o script de limpeza automaticamente ao fim de cada ciclo avaliativo.
+    * Isso garante que, assim que a avaliação fecha no sistema, os dados já sejam tratados e disponibilizados.
+
+* ** Atualização em "Real-Time" do BI:**
+    * Configuração do **Power BI Gateway** para leitura direta da base tratada (Data Warehouse).
+    * O dashboard passará a refletir o cenário da avaliação institucional minutos após o processamento dos dados, sem intervenção humana manual.
+
+### Fluxo de Evolução (Diagrama)
+
+```mermaid
+graph TD
+    subgraph "Fase Atual (Manual/Híbrida)"
+    A1[Sistema Acadêmico] -->|Exportação Manual| B1(Arquivos Excel/CSV)
+    B1 -->|Execução Manual| C1[Script Python ETL]
+    C1 -->|Gera CSV Tratado| D1[Power BI Desktop]
+    end
+
+    subgraph "Fase Futura (Automatizada 100%)"
+    A2[Sistema Acadêmico] -->|API / Endpoints| B2(Coletor Automático)
+    B2 -->|Trigger Automático| C2[Python ETL no Servidor]
+    C2 -->|Grava em Banco DW| D2[(Data Warehouse CPA)]
+    D2 <-->|Gateway| E2[Power BI Online]
+    end
+
+    style A2 fill:#f9f,stroke:#333,stroke-width:2px
+    style E2 fill:#bbf,stroke:#333,stroke-width:2px
+
 ## Autoria e Colaboração
 
 **Desenvolvedor Líder:** João Vitor Azevedo
